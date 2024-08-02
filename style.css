@@ -7,22 +7,23 @@ h1 {
     color: white;
     text-align: center;
     font-weight: bold;
+    font-size: 2.2rem;
 }
 
 li {
     list-style-type: none;
-    flex-basis: 120px;
+    flex-basis: calc((100% / 7) - (10px * 6 / 7));
     height: 120px;
-    margin: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 /* List */
 
 .list {
-    /* gap: 10px; */
+    gap: 10px;
     padding-left: 0;
 }
 

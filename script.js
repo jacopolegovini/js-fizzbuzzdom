@@ -47,7 +47,7 @@ for (i = 1; i <= 100; i++) {
         }
 
         if (flagFizzBuzz === 1) {
-            list.innerHTML += `<li class="fizz-buzz"> ${textPrint} ciaoooooo </li>`;
+            list.innerHTML += `<li class="fizz-buzz">${textPrint}</li>`;
         } else {
             list.innerHTML += `<li class="fizz">${textPrint}</li>`;
         }
@@ -62,13 +62,13 @@ for (i = 1; i <= 100; i++) {
         }
 
         if (flagFizzBuzz === 1) {
-            list.innerHTML += `<li class="fizz-buzz"> ${textPrint} ciaoooooo </li>`;
+            list.innerHTML += `<li class="fizz-buzz">${textPrint}</li>`;
         } else {
             list.innerHTML += `<li class="buzz">${textPrint}</li>`;
         }
 
     } else {
         console.log(textPrint);
-        list.innerHTML += `<li class="standard"> ${textPrint} </li>`;
+        list.innerHTML += `<li class="standard">${textPrint} </li>`;
     }
 }
