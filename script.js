@@ -18,11 +18,11 @@ console.log('JS OK');
 //  - Se % di cinque da resto 0 allora è divisibile
 //  - Se % di tre e cinque da resto 0 allora è divisibile
 //  - Stampa il risultato
-// Inietta in pagina
+//  - Inietta in pagina
 
 
 // Recupera elementi dal DOM
-const list = document.querySelector('.list-group');
+const list = document.querySelector('.list');
 
 // Dichiarazione variabili
 const fizz = 'Fizz';

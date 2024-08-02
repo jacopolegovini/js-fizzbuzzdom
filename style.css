@@ -1,0 +1,28 @@
+/* General */
+body {
+    background-color: #083B4C;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+    background-color: #1389B2;
+    flex-basis: calc(100% / 7);
+    text-align: center;
+}
+
+/* List */
+
+.list {
+    /* gap: 10px;
+    padding-left: 0; */
+}
+
+.fizz {
+    background-color: #0BD6A1;
+}
