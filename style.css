@@ -12,7 +12,7 @@ h1 {
 
 li {
     list-style-type: none;
-    flex-basis: calc((100% / 7) - (10px * 6 / 7));
+    flex-basis: calc((100% / 7) - (20px * 6 / 7));
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ li {
 /* List */
 
 .list {
-    gap: 10px;
+    gap: 20px;
     padding-left: 0;
 }
 
