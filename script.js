@@ -9,6 +9,21 @@ console.log('JS OK');
 //  - Se % di tre e cinque da resto 0 allora è divisibile
 //  - Stampa il risultato
 
+// MILESTONE 2
+// Recupera elementi dal DOM
+// Dichiarazione variabili
+// Ciclo for
+//  - Annidamento if
+//  - Se % di tre da resto 0 allora è divisibile
+//  - Se % di cinque da resto 0 allora è divisibile
+//  - Se % di tre e cinque da resto 0 allora è divisibile
+//  - Stampa il risultato
+// Inietta in pagina
+
+
+// Recupera elementi dal DOM
+const list = document.querySelector('.list-group');
+
 // Dichiarazione variabili
 const fizz = 'Fizz';
 const buzz = 'Buzz';
@@ -28,6 +43,8 @@ for (i = 1; i <= 100; i++) {
             console.log(textPrint);
         }
 
+        list.innerHTML += `<li> ${textPrint} </li>`;
+
     } else if ((i % 5) === 0) {
         if ((i % 3) === 0) {
             textPrint = fizzBuzz;
@@ -36,8 +53,12 @@ for (i = 1; i <= 100; i++) {
             textPrint = buzz;
             console.log(textPrint);
         }
+        
+        list.innerHTML += `<li> ${textPrint} </li>`;
 
     } else {
         console.log(textPrint);
+        
+        list.innerHTML += `<li> ${textPrint} </li>`;
     }
 }
