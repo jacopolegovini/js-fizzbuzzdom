@@ -29,6 +29,7 @@ const fizz = 'Fizz';
 const buzz = 'Buzz';
 const fizzBuzz = 'FizzBuzz';
 let textPrint = '';
+let flagFizzBuzz = 0;
 
 // Ciclo for
 for (i = 1; i <= 100; i++) {
@@ -36,14 +37,20 @@ for (i = 1; i <= 100; i++) {
 
     if ((i % 3) === 0) {
         if ((i % 5) === 0) {
+            flagFizzBuzz = 1;
             textPrint = fizzBuzz;
             console.log(textPrint);
         } else {
+            flagFizzBuzz = 0;
             textPrint = fizz;
             console.log(textPrint);
         }
 
-        list.innerHTML += `<li> ${textPrint} </li>`;
+        if (flagFizzBuzz === 1) {
+            list.innerHTML += `<li class="fizz-buzz"> ${textPrint} ciaoooooo </li>`;
+        } else {
+            list.innerHTML += `<li class="fizz">${textPrint}</li>`;
+        }
 
     } else if ((i % 5) === 0) {
         if ((i % 3) === 0) {
@@ -53,12 +60,15 @@ for (i = 1; i <= 100; i++) {
             textPrint = buzz;
             console.log(textPrint);
         }
-        
-        list.innerHTML += `<li> ${textPrint} </li>`;
+
+        if (flagFizzBuzz === 1) {
+            list.innerHTML += `<li class="fizz-buzz"> ${textPrint} ciaoooooo </li>`;
+        } else {
+            list.innerHTML += `<li class="buzz">${textPrint}</li>`;
+        }
 
     } else {
         console.log(textPrint);
-        
-        list.innerHTML += `<li> ${textPrint} </li>`;
+        list.innerHTML += `<li class="standard"> ${textPrint} </li>`;
     }
 }

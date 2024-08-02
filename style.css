@@ -11,7 +11,6 @@ h1 {
 
 li {
     list-style-type: none;
-    background-color: #1389B2;
     flex-basis: 120px;
     height: 120px;
     margin: 10px 10px;
@@ -27,6 +26,18 @@ li {
     padding-left: 0;
 }
 
+.standard {
+    background-color: #1389B2;
+}
+
 .fizz {
     background-color: #0BD6A1;
+}
+
+.buzz {
+    background-color: #FFD166;
+}
+
+.fizz-buzz {
+    background-color: #F0466F;
 }
